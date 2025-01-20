@@ -19,7 +19,6 @@ function toggleDevtools() {
 
 onMounted(() => {
   chrome.management.get(vue3DevtoolsId, (vue3) => {
-    console.log(vue3)
     if (vue3.enabled) {
       isVue3Active.value = true;
       currentDevtools.value = "Vue 3 Devtools";

@@ -165,12 +165,7 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,
     write: true,
-    rollupOptions: {
-      // ui or pages that are not specified in manifest file need to be specified here
-      input: {
-        setup: "src/ui/setup/index.html",
-      },
-    },
+    rollupOptions: {},
   },
 
   server: {
