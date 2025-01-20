@@ -12,7 +12,7 @@ const [major, minor, patch, label = "0"] = version
 
 export default {
   author: {
-    email: "mubaidr@gmail.com",
+    email: "perot.valentin@gmail.com",
   },
   name: env.mode === "staging" ? `[INTERNAL] ${name}` : displayName || name,
   description,
@@ -37,14 +37,9 @@ export default {
       run_at: "document_end",
     },
   ],
-  side_panel: {
-    default_path: "src/ui/side-panel/index.html",
-  },
-  devtools_page: "src/devtools/index.html",
-  options_page: "src/ui/options-page/index.html",
   offline_enabled: true,
   host_permissions: [],
-  permissions: ["storage", "tabs", "background", "sidePanel"],
+  permissions: ["management", "storage", "background"],
   web_accessible_resources: [],
   icons: {
     16: "src/assets/logo.png",

@@ -19,7 +19,7 @@ appRouter.addRoute({
 //   next()
 // })
 
-const app = createApp(App).use(i18n).use(notivue).use(pinia).use(appRouter)
+const app = createApp(App).use(i18n).use(notivue)
 
 app.mount("#app")
 
